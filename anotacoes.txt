@@ -108,7 +108,9 @@ testar o valor de 'Exemplo de Requisição de API + &language=pt-BR' em 'resttes
             "vote_count": 20520
        }
 
+------------------------------
 
+ver console da página
 
 
 
