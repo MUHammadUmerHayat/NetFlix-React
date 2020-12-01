@@ -2,12 +2,10 @@ import React from 'react'
 import './App.css'
 
 
-function App() {
+export default () => {
     return (
-        <div >
-            React
-        </div>
+      <div>
+          Olá Mundo!
+      </div>
     )
 }
-
-export default App
