@@ -8,7 +8,8 @@ resttestttest.com
 digitar no terminal:
       npx create-react-app netflixclone
 
-
+abrir terminal da pasta netflixclone:
+     npm start
 
 
 
