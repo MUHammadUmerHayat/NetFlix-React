@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 
 
-export default () => {
+export default function App() {
     return (
       <div>
           Olá Mundo!
