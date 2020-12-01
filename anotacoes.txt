@@ -1,0 +1,26 @@
+
+themoviedb.org
+
+jsonviewer.stack.hu
+
+resttestttest.com
+
+digitar no terminal:
+      npx create-react-app netflixclone
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
