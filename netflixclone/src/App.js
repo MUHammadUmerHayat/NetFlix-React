@@ -8,6 +8,7 @@ import FilmesDestaques from './components/FilmesDestaques'
 export default function App() {
 
    const [listaFilmes, setListaFilmes] = useState([])
+   // eslint-disable-next-line
    const [dadosDestacados, setDadosDestacados] = useState(null)
    
    useEffect(() => {
@@ -22,7 +23,9 @@ export default function App() {
             let escolhidoAleatorio = Math.floor(Math.random() * (originais[0].itens.results.length - 1))
             let escolhido = originais[0].itens.results[escolhidoAleatorio]
 
-            console.log(escolhido)
+            /* console.log(escolhido) */
+            let escolhidoInfo = await Tmdb.getFilmeInfo(escolhido.id, 'tv')
+            console.log(escolhidoInfo)
 
         }
         carregarTudo()

@@ -34,7 +34,29 @@ export default {
            { slug: 'romance', titulo: 'Romance', itens: await buscaBasica(`/discover/movie?with_genres=10749&language=pt-BR&api_key=${API_KEY}`) },
            { slug: 'documentary', titulo: 'Documentários', itens: await buscaBasica(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`) }
         ]
+    },
+
+    getFilmeInfo: async (filmeId, tipo) => {
+        let info = {}
+    
+        if (filmeId) {
+            switch (tipo) {
+               case 'movie':
+                  info = await buscaBasica(`/movie/${filmeId}?language=pt-BR&api_key=${API_KEY}`)
+               break
+               case 'tv':
+                  info = await buscaBasica(`/tv/${filmeId}?language=pt-BR&api_key=${API_KEY}`)
+               break
+               default:
+                   info = null
+               break           
+            }
+    
+        }
+         
+        return info
     }
+
 }
 
 
