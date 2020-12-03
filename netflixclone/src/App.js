@@ -8,6 +8,7 @@ import FilmesDestaques from './components/FilmesDestaques'
 export default function App() {
 
    const [listaFilmes, setListaFilmes] = useState([])
+   const [dadosDestacados, setDadosDestacados] = useState(null)
    
    useEffect(() => {
         const carregarTudo = async () => {
@@ -21,8 +22,10 @@ export default function App() {
 
     return (
       <div className="pagina">
-          <FilmesDestaques />
 
+          {dadosDestacados && 
+          <FilmesDestaques item={dadosDestacados} />}
+          
           <section className="listas">
                {listaFilmes.map((item, chave) => (
                    <ListaFilmes key={chave} titulo={item.titulo} itens={item.itens} />
