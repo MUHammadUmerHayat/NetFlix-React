@@ -15,6 +15,41 @@
     background: linear-gradient(to right, #111 30%, transparent 70%);
 }
 
+.destacado--nome {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.destacado--info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+ 
+.destacado--pontos {
+    display: inline-block;
+    color: #46d369;
+    margin-right: 15px;
+}
+
+.destacado--ano {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.destacado-temporadas {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
