@@ -5,11 +5,15 @@
 .destacado--vertical {
     width: inherit;
     height: inherit;
-    background: linear-gradient(to top, #111, transparent);
+    background: linear-gradient(to top, #111 10%, transparent 90%);
 
 }
 
-
+.destacado--horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111, transparent);
+}
 
 
 
