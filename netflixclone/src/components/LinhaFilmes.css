@@ -1,0 +1,18 @@
+
+.listaFilmes {
+    margin-bottom: 30px;
+}
+
+.listaFilmes h2 {
+    margin: 0px 0px 0px 30px;
+}
+ 
+.listaFilmes--arealista {
+    overflow-x: hidden;
+}
+ 
+.listaFilmes--item {
+    display: inline-block;
+}
+ 
+

@@ -6,7 +6,7 @@ import './LinhaFilmes.css'
 export default function LinhaFilmes({ titulo, itens }) {
 
      return (
-        <div>
+        <div className="listaFilmes">
            <h2>{titulo}</h2>
            <div className="listaFilmes--arealista">
                 <div className="listaFilmes--lista">
