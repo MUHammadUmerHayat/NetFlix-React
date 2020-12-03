@@ -112,6 +112,7 @@ testar o valor de 'Exemplo de Requisição de API + &language=pt-BR' em 'resttes
 
 ver console da página
 
+ver página
 
 
 

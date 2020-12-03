@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import Tmdb from './Tmdb'
-
+import ListaFilmes from './components/LinhaFilmes'
 
 
 export default function App() {
@@ -22,9 +22,7 @@ export default function App() {
       <div className="pagina">
           <section className="listas">
                {listaFilmes.map((item, chave) => (
-                   <div>
-                      {item.titulo}
-                   </div>
+                   <ListaFilmes />
                ))}
           </section>          
       </div>
