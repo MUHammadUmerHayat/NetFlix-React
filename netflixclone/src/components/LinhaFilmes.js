@@ -3,11 +3,11 @@ import './LinhaFilmes.css'
 
 
 
-export default function LinhaFilmes() {
+export default function LinhaFilmes({ titulo, itens }) {
 
      return (
         <div>
-           Lista do filme
+           <h2>{titulo}</h2>
         </div>
      )
 }
