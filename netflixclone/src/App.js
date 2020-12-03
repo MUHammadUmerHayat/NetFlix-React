@@ -8,7 +8,7 @@ import FilmesDestaques from './components/FilmesDestaques'
 export default function App() {
 
    const [listaFilmes, setListaFilmes] = useState([])
-   const [dadosDestacados, setDadosDestacados] = useState([])
+   const [dadosDestacados, setDadosDestacados] = useState(null)
    
    useEffect(() => {
         const carregarTudo = async () => {
@@ -16,6 +16,14 @@ export default function App() {
             let lista = await Tmdb.getListaCaseira()
             console.log(lista)
             setListaFilmes(lista)
+
+            // pegando o destacado
+            let originais = lista.filter(cada => cada.slug === 'originals')
+            let escolhidoAleatorio = Math.floor(Math.random() * (originais[0].itens.results.length - 1))
+            let escolhido = originais[0].itens.results[escolhidoAleatorio]
+
+            console.log(escolhido)
+
         }
         carregarTudo()
     }, [])
