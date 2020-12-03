@@ -8,7 +8,7 @@ import FilmesDestaques from './components/FilmesDestaques'
 export default function App() {
 
    const [listaFilmes, setListaFilmes] = useState([])
-   const [dadosDestacados, setDadosDestacados] = useState(null)
+   const [dadosDestacados, setDadosDestacados] = useState([])
    
    useEffect(() => {
         const carregarTudo = async () => {
