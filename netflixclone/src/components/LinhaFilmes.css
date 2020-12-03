@@ -13,8 +13,14 @@
  
 .listaFilmes--item {
     display: inline-block;
+    width: 150px;
+}
+
+.listaFilmes--item img {
+    width: 100%;
 }
  
-.listaFilmes--lista {
+/* .listaFilmes--lista {
     width: 9999px;
 }
+ */
