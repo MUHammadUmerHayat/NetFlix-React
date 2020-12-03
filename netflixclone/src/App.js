@@ -25,7 +25,8 @@ export default function App() {
 
             /* console.log(escolhido) */
             let escolhidoInfo = await Tmdb.getFilmeInfo(escolhido.id, 'tv')
-            console.log(escolhidoInfo)
+            /* console.log(escolhidoInfo) */
+            setDadosDestacados(escolhidoInfo)
 
         }
         carregarTudo()

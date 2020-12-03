@@ -3,12 +3,12 @@ import './FilmesDestaques.css'
 
 
 
-export default function FilmesDestaques() {
+export default function FilmesDestaques({item}) {
 
       return (
-          <div>
-              Filme em destaque
-          </div>
+          <section className="destacado">
+               <div>{item.original_name}</div>
+          </section>
       )
 }
 
