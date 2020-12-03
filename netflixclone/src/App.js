@@ -22,7 +22,7 @@ export default function App() {
       <div className="pagina">
           <section className="listas">
                {listaFilmes.map((item, chave) => (
-                   <ListaFilmes />
+                   <ListaFilmes key={chave} />
                ))}
           </section>          
       </div>
