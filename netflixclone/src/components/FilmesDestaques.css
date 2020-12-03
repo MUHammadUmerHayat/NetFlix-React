@@ -2,7 +2,12 @@
     height: 100vh;
 }
 
+.destacado--vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111, transparent);
 
+}
 
 
 
