@@ -9,6 +9,7 @@
  
 .listaFilmes--arealista {
     overflow-x: hidden;
+    padding-left: 30px;
 }
  
 .listaFilmes--item {
@@ -18,6 +19,11 @@
 
 .listaFilmes--item img {
     width: 100%;
+    transform: scale(0.9);
+}
+
+.listaFilmes--item img:hover {
+    transform: scale(1);
 }
  
 /* .listaFilmes--lista {
