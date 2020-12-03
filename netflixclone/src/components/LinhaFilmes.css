@@ -15,4 +15,6 @@
     display: inline-block;
 }
  
-
+.listaFilmes--lista {
+    width: 9999px;
+}
