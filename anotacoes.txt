@@ -114,6 +114,23 @@ ver console da página
 
 ver página
 
+https://fonts.google.com/
+       https://fonts.google.com/specimen/Roboto?query=roboto&sidebar.open=true&selection.family=Roboto:wght@400;700
+       
+       <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+       </style>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
