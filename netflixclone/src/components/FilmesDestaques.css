@@ -51,16 +51,23 @@
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
-    padding: 15px 25px;
+    padding: 12px 25px;
     border-radius: 5px;
     text-decoration: none;
     margin-right: 10px;
 
 }
 
+.destacado--bassistir {
+    background-color: #FFF;
+    color: #000;
+}
 
-
-
+.destacado--blista {
+    background-color: #333;
+    color:  #FFF;
+    
+}
 
 
 
