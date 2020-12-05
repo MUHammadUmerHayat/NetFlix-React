@@ -27,8 +27,8 @@ export default function FilmesDestaques({item}) {
                         </div>
                         <div className="destacado--descricao">{item.overview}</div>
                         <div className="destacado--botoes">
-                              <a href={`/watch/${item.id}`}>▶ Assistir</a>
-                              <a href={`/list/add/${item.id}`}>+ Minha Lista</a>
+                              <a href={`/watch/${item.id}`} className="destacado--bassistir">▶ Assistir</a>
+                              <a href={`/list/add/${item.id}`} className="destacado--blista">+ Minha Lista</a>
                         </div>
                         <div className="destacado--generos"><strong>Gêneros:</strong> {generos.join(', ')}</div>
                    </div>
