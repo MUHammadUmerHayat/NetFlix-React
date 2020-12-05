@@ -25,21 +25,19 @@
     font-weight: bold;
     margin-top: 15px;
 }
+
+.destacado--pontos, .destacado--ano, .destacado-temporadas {
+    display: inline-block;
+    margin-right: 15px;
+}
  
 .destacado--pontos {
-    display: inline-block;
     color: #46d369;
-    margin-right: 15px;
+    
 }
 
-.destacado--ano {
-    display: inline-block;
-    margin-right: 15px;
-}
 
-.destacado-temporadas {
-    display: inline-block;
-}
+
 
 
 
