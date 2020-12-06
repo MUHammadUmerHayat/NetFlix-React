@@ -55,7 +55,12 @@
     border-radius: 5px;
     text-decoration: none;
     margin-right: 10px;
+    opacity: 1;
+    transition: all ease 0.4s;
+}
 
+.destacado--bassistir:hover, .destacado--blista:hover {
+    opacity: 0.7;
 }
 
 .destacado--bassistir {
