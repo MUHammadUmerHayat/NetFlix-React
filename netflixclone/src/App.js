@@ -3,6 +3,7 @@ import './App.css'
 import Tmdb from './Tmdb'
 import ListaFilmes from './components/LinhaFilmes'
 import FilmesDestaques from './components/FilmesDestaques'
+import Cabecalho from './components/Cabecalho'
 
 
 export default function App() {
@@ -34,6 +35,8 @@ export default function App() {
 
     return (
       <div className="pagina">
+
+          <Cabecalho />
 
           {dadosDestacados && 
           <FilmesDestaques item={dadosDestacados} />}
