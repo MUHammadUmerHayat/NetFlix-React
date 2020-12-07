@@ -10,14 +10,22 @@ header {
     align-items: center;
 }
 
+.cabecalho--logo {
+    height: 25px;
+}
+
 .cabecalho--logo img {
     height: 100%;
 }
 
 .cabecalho--usuario {
-
+    height: 50px;
 }
 
+.cabecalho--usuario img {
+    height: 100%;
+    border-radius: 3px;
+}
 
 
 
