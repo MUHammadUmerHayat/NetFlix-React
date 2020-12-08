@@ -33,6 +33,7 @@
     width: 40px;
     height: 225px;
     background-color: #FF0000;
+    z-index: 99;
 }
 
 .listaFilmes--esquerdo {
