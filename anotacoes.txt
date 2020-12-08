@@ -129,9 +129,13 @@ dá uma olhada em 'themoviedb.org' e ver console do app
 
 experimentar rolar a página 
 
+https://material-ui.com/pt/
+    -> buscar icones
+      https://material-ui.com/pt/components/icons/#icons
+      https://material-ui.com/pt/components/material-icons/
 
-
-
+no terminal: npm i @material-ui/core
+no terminal: npm i @material-ui/icons
 
 
 
