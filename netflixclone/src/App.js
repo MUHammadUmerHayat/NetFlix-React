@@ -11,7 +11,8 @@ export default function App() {
    const [listaFilmes, setListaFilmes] = useState([])
    // eslint-disable-next-line
    const [dadosDestacados, setDadosDestacados] = useState(null)
-   const [cabecalhoPreto, setCabecalhoPreto] = useState(true)
+   // eslint-disable-next-line
+   const [cabecalhoPreto, setCabecalhoPreto] = useState(false)
    
    useEffect(() => {
         const carregarTudo = async () => {
@@ -32,6 +33,25 @@ export default function App() {
 
         }
         carregarTudo()
+    }, [])
+
+    useEffect(() => {   
+
+        const monitoradorRolagem = () => {
+            if (window.scrollY > 30) {
+               setCabecalhoPreto(true)
+            }
+            else {
+               setCabecalhoPreto(false)
+            }
+         }
+         
+         window.addEventListener('scroll', monitoradorRolagem)
+         
+         return () => {
+            window.removeEventListener('scrolll', monitoradorRolagem)
+         }
+         
     }, [])
 
     return (
