@@ -2,7 +2,6 @@ import React from 'react'
 import './FilmesDestaques.css'
 
 
-
 export default function FilmesDestaques({item}) {
 
       console.log('*', item)

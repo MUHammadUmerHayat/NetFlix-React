@@ -137,6 +137,10 @@ https://material-ui.com/pt/
 no terminal: npm i @material-ui/core
 no terminal: npm i @material-ui/icons
 
+      pegar do site:
+          import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+          import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+
 
 
 
