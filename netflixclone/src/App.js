@@ -66,7 +66,12 @@ export default function App() {
                {listaFilmes.map((item, chave) => (
                    <ListaFilmes key={chave} titulo={item.titulo} itens={item.itens} />
                ))}
-          </section>          
+          </section>
+          <footer>
+              Feito com <span role="img" aria-label="coração">&#x1F497;</span><br/>
+              Direitos de imagem para Netflix<br/>
+              Dados pegos do site Themoviedb.org
+          </footer>          
       </div>
     )
 }
