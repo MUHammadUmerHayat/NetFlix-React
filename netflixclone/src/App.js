@@ -11,7 +11,7 @@ export default function App() {
    const [listaFilmes, setListaFilmes] = useState([])
    // eslint-disable-next-line
    const [dadosDestacados, setDadosDestacados] = useState(null)
-   const [cabecalhoPreto, setCabecalhoPreto] = useState(false)
+   const [cabecalhoPreto, setCabecalhoPreto] = useState(true)
    
    useEffect(() => {
         const carregarTudo = async () => {
