@@ -35,6 +35,13 @@
     background-color: #FF0000;
 }
 
+.listaFilmes--esquerdo {
+    left: 0;
+}
+
+.listaFilmes--direito {
+    right: 0;
+}
 
  
 /* .listaFilmes--lista {
