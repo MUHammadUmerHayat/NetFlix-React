@@ -11,6 +11,7 @@ export default function App() {
    const [listaFilmes, setListaFilmes] = useState([])
    // eslint-disable-next-line
    const [dadosDestacados, setDadosDestacados] = useState(null)
+   const [cabecalhoPreto, setCabecalhoPreto] = useState(false)
    
    useEffect(() => {
         const carregarTudo = async () => {
@@ -36,7 +37,7 @@ export default function App() {
     return (
       <div className="pagina">
 
-          <Cabecalho />
+          <Cabecalho preto={cabecalhoPreto} />
 
           {dadosDestacados && 
           <FilmesDestaques item={dadosDestacados} />}
