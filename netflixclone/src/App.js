@@ -7,7 +7,7 @@ import Cabecalho from './components/Cabecalho'
 
 
 export default function App() {
-   // eslint-disable-next-line
+   
    const [listaFilmes, setListaFilmes] = useState([])
    // eslint-disable-next-line
    const [dadosDestacados, setDadosDestacados] = useState(null)
@@ -19,7 +19,7 @@ export default function App() {
             // pegando a lista total
             let lista = await Tmdb.getListaCaseira()
             console.log(lista)
-            //setListaFilmes(lista)
+            setListaFilmes(lista)
 
             // pegando o destacado
             let originais = lista.filter(cada => cada.slug === 'originals')
@@ -27,10 +27,10 @@ export default function App() {
             let escolhido = originais[0].itens.results[escolhidoAleatorio]
 
             /* console.log(escolhido) */
-            // eslint-disable-next-line
+            
             let escolhidoInfo = await Tmdb.getFilmeInfo(escolhido.id, 'tv')
             /* console.log(escolhidoInfo) */
-            //setDadosDestacados(escolhidoInfo)
+            setDadosDestacados(escolhidoInfo)
 
         }
         carregarTudo()
@@ -73,10 +73,12 @@ export default function App() {
               Direitos de imagem para Netflix<br/>
               Dados pegos do site Themoviedb.org
           </footer>
-
-          <div className="carregamento">
-               <img src="https://www.filmelier.com/pt/br/news/wp-content/uploads/2020/03/netflix-loading.gif" alt="carregando" />    
-          </div>          
+          {listaFilmes.length <= 0 && 
+            <div className="carregamento">
+                <img src="https://www.filmelier.com/pt/br/news/wp-content/uploads/2020/03/netflix-loading.gif" alt="carregando" />    
+            </div>          
+          
+          }
       </div>
     )
 }
