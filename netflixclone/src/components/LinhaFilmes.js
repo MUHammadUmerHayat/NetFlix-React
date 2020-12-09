@@ -28,7 +28,7 @@ export default function LinhaFilmes({ titulo, itens }) {
            </div>
 
            <div className="listaFilmes--arealista">
-                <div className="listaFilmes--lista" style={{marginLeft: rolarX}}>
+                <div className="listaFilmes--lista" style={{marginLeft: rolarX, width: itens.results.length * 150 }} >
                     {itens.results.length > 0 && itens.results.map((item, chave) => (
                         <div className="listaFilmes--item" key={chave}>
                             <img src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} key={chave} alt={item.original_title}/>
