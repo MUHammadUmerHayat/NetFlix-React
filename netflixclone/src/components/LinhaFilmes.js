@@ -19,7 +19,9 @@ export default function LinhaFilmes({ titulo, itens }) {
      }
 
      const direcionarSetaDireita = () => {
-          
+          let x = rolarX - Math.round(window.innerWidth / 2)
+                    
+          setRolarX(x)
      }
 
      return (
