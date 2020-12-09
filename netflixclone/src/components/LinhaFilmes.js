@@ -7,10 +7,15 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 export default function LinhaFilmes({ titulo, itens }) {
 
-     const [rolarX, setRolarX] = useState(0)
+     const [rolarX, setRolarX] = useState(-400)
 
      const direcionarSetaEsquerda = () => {
-
+          let x = rolarX + 150
+          if(x > 0) {
+             x = 0
+          }
+          
+          setRolarX(x)
      }
 
      const direcionarSetaDireita = () => {
