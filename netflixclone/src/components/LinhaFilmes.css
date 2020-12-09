@@ -6,6 +6,10 @@
 .listaFilmes h2 {
     margin: 0px 0px 0px 30px;
 }
+
+.listaFilmes--lista {
+    transition: all ease .5s;
+}
  
 .listaFilmes--arealista {
     overflow-x: hidden;
