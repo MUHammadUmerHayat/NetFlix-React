@@ -39,6 +39,7 @@
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
+    opacity: 0;
 }
 
 .listaFilmes--esquerdo {
@@ -47,6 +48,10 @@
 
 .listaFilmes--direito {
     right: 0;
+}
+
+.listaFilmes:hover .listaFilmes--esquerdo, .listaFilmes:hover .listaFilmes--direito {
+    opacity: 1;
 }
 
  
