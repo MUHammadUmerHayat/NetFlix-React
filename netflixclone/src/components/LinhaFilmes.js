@@ -10,7 +10,7 @@ export default function LinhaFilmes({ titulo, itens }) {
      const [rolarX, setRolarX] = useState(-400)
 
      const direcionarSetaEsquerda = () => {
-          let x = rolarX + 150
+          let x = rolarX + Math.round(window.innerWidth / 2)
           if(x > 0) {
              x = 0
           }
