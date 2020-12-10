@@ -12,6 +12,12 @@ export default function FilmesDestaques({item}) {
          generos.push(item.genres[cada].name)
       }
 
+      let descricao = item.overview
+
+      if (descricao.length > 200) {
+           descricao = `${descricao.substring(0, 200)}...`
+      }
+
       return (
           <section className="destacado" style={{ backgroundSize: 'cover', backgroundPosition: 'center', backgroundImage: `url(https://image.tmdb.org/t/p/original${item.backdrop_path})`}}>
                {/* <div>{item.original_name}</div> */}
@@ -24,7 +30,7 @@ export default function FilmesDestaques({item}) {
                             <div className="destacado-temporadas">{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''}</div>
 
                         </div>
-                        <div className="destacado--descricao">{item.overview}</div>
+                        <div className="destacado--descricao">{descricao}</div>
                         <div className="destacado--botoes">
                               <a href={`/watch/${item.id}`} className="destacado--bassistir">▶ Assistir</a>
                               <a href={`/list/add/${item.id}`} className="destacado--blista">+ Minha Lista</a>
