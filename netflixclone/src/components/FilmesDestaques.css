@@ -87,7 +87,29 @@
 
 }
 
-
+@media (max-width: 760px) {
+    .destacado {
+        height: 80vh;
+    }
+    .destacado--nome {
+        font-size: 40px;
+    }
+    .destacado--info {
+        font-size: 16px;
+    }
+    .destacado--descricao {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .destacado--bassistir, .destacado--blista {
+        font-size: 16px;
+    }
+    .destacado--generos {
+        font-size: 14px;
+    }
+    
+}
 
 
 

@@ -141,6 +141,10 @@ no terminal: npm i @material-ui/icons
           import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
           import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
+reativo em celular
+
+
+
 
 
 

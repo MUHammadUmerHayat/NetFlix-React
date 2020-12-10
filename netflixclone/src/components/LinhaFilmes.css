@@ -59,5 +59,11 @@
     opacity: 1;
 }
 
+@media (max-width: 760px) {
+    .listaFilmes--esquerdo, .listaFilmes--direito {
+        opacity: 1;
+    }
+}
+
  
 
