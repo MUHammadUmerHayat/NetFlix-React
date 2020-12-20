@@ -4,6 +4,7 @@ import Tmdb from './Tmdb'
 import ListaFilmes from './components/LinhaFilmes'
 import FilmesDestaques from './components/FilmesDestaques'
 import Cabecalho from './components/Cabecalho'
+import carregamento from './imagens/carregamento.gif'
 
 
 export default function App() {
@@ -75,7 +76,7 @@ export default function App() {
           </footer>
           {listaFilmes.length <= 0 && 
             <div className="carregamento">
-                <img src="https://www.filmelier.com/pt/br/news/wp-content/uploads/2020/03/netflix-loading.gif" alt="carregando" />    
+                <img src={carregamento} alt="carregando" />    
             </div>          
           
           }
